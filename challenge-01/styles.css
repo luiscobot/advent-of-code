@@ -82,7 +82,7 @@ section {
   box-shadow: -5px 15px 50px hsl(0, 0%, 0%), 5px -15px 50px hsla(0, 0%, 100%, .15);
 }
 
-.timer {
+.time {
   font-family: "Bebas Neue - Book", sans-serif;
   font-size: 10rem;
   line-height: 10rem;
