@@ -149,6 +149,11 @@ input[type=number] {
   border: none;
 }
 
+.status,
+.settings {
+  cursor: pointer;
+}
+
 .settings svg {
   display: flex;
   justify-content: center;
