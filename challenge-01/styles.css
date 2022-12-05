@@ -64,7 +64,7 @@ p, h1, h2, h3, h4, h5, h6 {
 section {
   width: 100%;
   height: 100%;
-  background-color: #2b2a30;
+  background-color: hsl(250, 5%, 20%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,9 +79,11 @@ section {
   aspect-ratio: 1;
   max-width: 90%;
   border-radius: 50%;
-  background: radial-gradient(#3a393f, #17171a);
+  background: radial-gradient(hsl(250, 5%, 25%), hsl(250, 5%, 0%));
   padding: 50px;
-  border: 10px solid hsl(0, 0%, 0%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: hsl(0, 100%, 30%);
   box-shadow: -5px 15px 50px hsl(0, 0%, 0%), 5px -15px 50px hsla(0, 0%, 100%, .15);
 }
 
@@ -95,7 +97,6 @@ section {
   font-family: "Bebas Neue - Book", sans-serif;
   font-size: 10rem;
   line-height: 1;
-  color: hsl(0, 0%, 100%);
 }
 
 .time input {
@@ -105,6 +106,7 @@ section {
   outline: none;
   border: none;
   border-bottom: 1px dotted hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .time input:first-of-type {
@@ -142,6 +144,15 @@ input[type=number] {
   margin-bottom: 10px;
 }
 
+.time p,
+.time input,
+.status {
+  background: -webkit-linear-gradient(hsl(0, 0%, 100%), hsl(220, 15%, 80%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 4px hsla(0, 0%, 0%, .25);
+}
+
 .settings {
   width: 50px;
   aspect-ratio: 1;
@@ -176,13 +187,4 @@ input[type=number] {
 .status:hover,
 .settings svg:hover {
   opacity: 1;
-}
-
-.time p,
-.time input,
-.status {
-  background: -webkit-linear-gradient(hsl(0, 0%, 100%), hsl(220, 15%, 80%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 4px 4px hsla(0, 0%, 0%, .25);
 }
