@@ -95,6 +95,7 @@ section {
   font-family: "Bebas Neue - Book", sans-serif;
   font-size: 10rem;
   line-height: 1;
+  color: hsl(0, 0%, 100%);
 }
 
 .time input {
@@ -160,14 +161,26 @@ input[type=number] {
   align-items: center;
   width: 100%;
   aspect-ratio: 1;
-  fill: #585858;
+  fill: hsl(0, 0%, 35%);
   filter: drop-shadow(0 4px 4px hsla(0, 0%, 0%, .25));
+  opacity: 0;
+  tra
+}
+
+.status,
+.settings svg {
+  opacity: .6;
+  transition: opacity .6s ease;
+}
+
+.status:hover,
+.settings svg:hover {
+  opacity: 1;
 }
 
 .time p,
 .time input,
 .status {
-  color: hsl(0, 0%, 100%);
   background: -webkit-linear-gradient(hsl(0, 0%, 100%), hsl(220, 15%, 80%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
